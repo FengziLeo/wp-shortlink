@@ -2,7 +2,7 @@
 基于Sink和wordpress插件实现文章短链分享
 
 ## 示例
-[https://blog.fz.do](blog.fz.do)（可进入任意文章末尾查看）
+[blog.fz.do](https://blog.fz.do)（可进入任意文章末尾查看）
 
 ## 本内容适用情形
 1、dns服务商为Cloudflare（其他没测试过）；  
