@@ -62,3 +62,7 @@ public function get_short_url( $url, $post_id ) {
       }
 
 }
+
+
+//不要无脑复制，这是另一个需要改的              
+$horizontal_div = "<div class='heateorSssClear'></div><div " . $sharing_container_style . " class='heateor_sss_sharing_container heateor_sss_horizontal_sharing' " . ( $this->is_amp_page() ? "" : "data-heateor-sss-href='" . $sharing_url . "'" ). "><div class='heateor_sss_sharing_title' " . $sharing_title_style . " >" . esc_html( ucfirst( get_option( 'heateor_sss' )['title'] ) ) . "</div>" . $sharing_div . "</div><div class='heateorSssClear'></div>";
