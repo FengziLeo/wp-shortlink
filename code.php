@@ -28,14 +28,14 @@ public function get_short_url( $url, $post_id ) {
           // 在这里添加生成新的slug的代码逻辑
           $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
           $slug = '';
-          for ($i = 0; $i < 5; $i++) {
+          for ($i = 0; $i < 6; $i++) {
               $slug .= $characters[rand(0, strlen($characters) - 1)];
           }
           
-          $api_url = "https://shortlink.fz.do/api/link/create";
-              // 定义要请求的URL和请求头
+          $api_url = "https://shortlink.example.com/api/link/create";
+              // 修改为请求的URL和请求头
           $headers = array(
-              "authorization: Bearer pw",//修改为自己的
+              "authorization: Bearer pw",//把pw修改为自己的密码
               "content-type: application/json"
           );
           $data = json_encode(array("url" => $url, "slug" => $slug));
